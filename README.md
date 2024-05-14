@@ -21,7 +21,7 @@ First, clone this repo or just copy the script on it to `.sh` file type,  or you
 
 1. Clone this repository:
 
-```
+``` sh
 git clone https://github.com/averrois/ToWebp.git
 ```
 
