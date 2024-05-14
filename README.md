@@ -4,6 +4,8 @@ This is a simple Bash script that converts all non-WebP images (JPG, JPEG, and P
 
 **Warning:** This script will **remove** the original image files after converting them to WebP format. Ensure you have backups before running this script.
 
+**note:** You need to have `cwebp` installed. 
+
 ## usage:
 
 The script is based on the `cwebp` command-line tool, which is part of the WebP image converter utilities. The main difference between this script and directly using `cwebp` is that this script automates the conversion process for all compatible images in the current directory. With `cwebp`, you would need to convert each image individually.
