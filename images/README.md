@@ -2,7 +2,7 @@
 
 [![Version 1.0](https://img.shields.io/badge/Version-1.1.0-blue.svg)](https://github.com/your-username/towebp.sh/releases) [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  [![Build Passing](https://img.shields.io/badge/Build-Passing-green.svg)](https://travis-ci.org/your-username/towebp.sh)
 
-## Overview
+## Overview 
 
 **toWebP** is a simple Bash script that converts images of specific types (JPEG, JPG, and PNG) to WebP format, compresses them with a default value of `90`, and deletes the original files. The script can be run locally or installed globally on Linux, macOS, and other Unix-like systems. This repository contains a folder `/images` with three images in different file formats for you to test right away.
 
