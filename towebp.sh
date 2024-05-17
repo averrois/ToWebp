@@ -63,7 +63,7 @@ if [[ $1 == "-h" || $1 == "--help" ]]; then
   echo "USAGE: $BASENAME [quality] [--log-file]"
   echo "Options:"
   echo "  quality       Compression quality (default: 90)"
-  echo "  --log-file    Log file for output (default: conversion.log)"
+  echo "  --log-file    Log file for output (default: TOWEBP.log)"
 
   # Exit the script
   exit 0
