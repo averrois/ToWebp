@@ -113,10 +113,4 @@ The script is compatible with the following operating systems:
 ## License
 
 **toWebP** is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-<<<<<<< HEAD
-=======
 
----
-
-This version removes any references to specific versions or release notes, as requested.
->>>>>>> parent of e2e396e (docs: update readme file)
