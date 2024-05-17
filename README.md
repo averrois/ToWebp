@@ -114,6 +114,3 @@ The script is compatible with the following operating systems:
 
 **toWebP** is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
----
-
-This version removes any references to specific versions or release notes, as requested.
