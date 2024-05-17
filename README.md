@@ -1,51 +1,119 @@
-# ToWebp
+# toWebP
 
-This is a simple Bash script that converts all non-WebP images (JPG, JPEG, and PNG) in the current directory to WebP format. The script takes a single argument, which specifies the quality level for the WebP conversion.
+## Overview
 
-**Warning:** This script will **remove** the original image files after converting them to WebP format. Ensure you have backups before running this script.
+**toWebP** is a simple Bash script that converts images of specific types (JPEG, JPG, and PNG) to WebP format, compresses them with a default value of `90`, and deletes the original files. The script can be run locally or installed globally on Linux, macOS, and other Unix-like systems. This repository contains a folder `/images` with three images in different file formats for you to test right away.
 
-**note:** You need to have `cwebp` installed. 
+## Quick Start
 
-## usage:
+**Note:** As described, this script will remove the original image files after converting them to WebP format. Ensure you have backups before running this script.
 
-The script is based on the `cwebp` command-line tool, which is part of the WebP image converter utilities. The main difference between this script and directly using `cwebp` is that this script automates the conversion process for all compatible images in the current directory. With `cwebp`, you would need to convert each image individually.
+Want to get started quickly? Here's a quick rundown for your command-line interface (CLI):
 
-To use the script, simply run:
+1. Clone the repository: `git clone https://github.com/averrois/towebp.sh.git`
+2. Navigate into the cloned repository: `cd towebp.sh`
+3. Make the script executable: `chmod +x towebp.sh`
+4. Run the script: `./towebp.sh`
 
-``` sh
-towebp 90 #90 is the quality level
+This will convert all JPEG, JPG, and PNG images **in the current directory** to WebP format with a default compression quality of 90.
+
+## Installation
+
+### Cloning the Repository with Git
+
+To install `towebp.sh`, clone the repository using Git:
+
+```bash
+git clone https://github.com/averrois/towebp.sh.git
+```
+Then, navigate into the cloned repository:
+
+```bash
+cd towebp.sh
+```
+Make the script executable:
+
+```bash
+chmod +x towebp.sh
+```
+### Downloading as ZIP Archive
+
+If you don't have Git installed, you can download a ZIP archive of the repository from GitHub:
+
+[Download the latest release](https://github.com/averrois/ToWebp/archive/refs/heads/master.zip)
+
+1. Extract the ZIP archive and navigate into the extracted directory
+
+### Local Installation
+
+To run the script locally, simply make the script executable: `chmod +x towebp.sh`
+
+### Global Installation
+
+To install `towebp.sh` globally, move the script to a directory in your system's PATH (e.g., `/usr/local/bin`):
+
+```bash
+sudo mv towebp.sh /usr/local/bin
 ```
 
-This command will convert all JPG, JPEG, and PNG images in the current directory to WebP format with a quality level of 90.
-## installation process:
+## Usage
 
-First, clone this repo or just copy the script on it to `.sh` file type,  or you can follow this steps:
+### Basic Usage
 
-1. Clone this repository:
+Run the script **in the directory containing the images** you want to convert:
 
-``` sh
-git clone https://github.com/averrois/ToWebp.git
+```bash
+./towebp.sh
 ```
 
-2. Navigate to the repository directory:
+This will convert all JPEG, JPG, and PNG images in the current directory to WebP format with a default compression quality of `90`.
 
-``` sh
-cd ToWebp
+### Custom Compression Quality
+
+To specify a custom compression quality, pass the quality value as an argument:
+
+```bash
+./towebp.sh 80
 ```
 
-3. Make the script executable:
+This will convert the images with a compression quality of `80`.
 
-``` sh
-chmod +x /towebp.sh
+### Help
+
+To display the help message, run the script with the `-h` or `--help` argument:
+
+```bash
+./towebp.sh -h
 ```
 
-4. (Optional) Move or copy the script to a directory in your system's `PATH` for easy access from any location:
+This will display the usage message:
 
-``` sh
-sudo mv towebp.sh /usr/local/bin/towebp
+```
+USAGE: towebp.sh <quality>
 ```
 
+## Requirements
 
-Now, you can run the script from any directory by typing `towebp <quality>`.
+The script requires the `cwebp` command-line tool to be installed. If it's not installed, the script will provide instructions on how to install it based on your operating system. More information is available on [developers.google.com](https://developers.google.com/speed/webp/download).
 
-**Note:** This script requires the `cwebp` command-line tool to be installed on your system. If you don't have it installed, you may need to install the appropriate package for your distribution (e.g., `webp` on Ubuntu/Debian or `libwebp-tools` on CentOS/RHEL).
+## Supported Operating Systems
+
+The script is compatible with the following operating systems:
+
+* Linux (e.g., Arch, Ubuntu, Debian)
+* macOS (via [Homebrew](https://brew.sh/))
+* FreeBSD
+* Windows (via MSYS or Cygwin)
+
+## Contributors
+
+* [**averrois**](https://github.com/averrois/)
+* [**thaikolja**](https://github.com/thaikolja) <[kolja.nolte@gmail.com](mailto:kolja.nolte@gmail.com)>
+
+## License
+
+**toWebP** is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+This version removes any references to specific versions or release notes, as requested.
