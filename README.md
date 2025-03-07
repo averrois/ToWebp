@@ -23,7 +23,7 @@ This will convert all JPEG, JPG, and PNG images **in the current directory** to 
 To install `towebp.sh`, clone the repository using Git:
 
 ```bash
-git clone https://github.com/averrois/towebp.sh.git
+git clone https://github.com/averrois/ToWebp.git
 ```
 Then, navigate into the cloned repository:
 
